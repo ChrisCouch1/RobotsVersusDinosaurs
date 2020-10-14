@@ -52,7 +52,7 @@ namespace RobotsVsDinosaursProject
 
         public void Attacking(Robot enemy)                      // Attacks will be from 3 types, includes Energy loss.
         {
-            int damageTotal = 
+            int damageTotal = attackDamage;
             enemy.healthRobot -= damageTotal;
             RemoveEnergy();
 
