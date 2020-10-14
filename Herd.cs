@@ -11,9 +11,9 @@ namespace RobotsVsDinosaursProject
         public List<Dinosaur> dinosaurHerd = new List<Dinosaur>();
         public Herd()
         {
-            dinosaurHerd.Add(new Dinosaur("Thad", 40, 30));
-            dinosaurHerd.Add(new Dinosaur("Brad", 40, 30));
-            dinosaurHerd.Add(new Dinosaur("Chad", 40, 30));
+            dinosaurHerd.Add(new Dinosaur("T-rex1", 40, 30));
+            dinosaurHerd.Add(new Dinosaur("T-rex2", 40, 30));
+            dinosaurHerd.Add(new Dinosaur("T-rex3", 40, 30));
 
 
         }

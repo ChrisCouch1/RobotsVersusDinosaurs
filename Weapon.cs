@@ -20,19 +20,13 @@ namespace RobotsVsDinosaursProject
 
         public List<Weapon> weaponsList = new List<Weapon>();
         
-            public Weapon(Dinosaur enemy)               
-            {
+        public Weapon(Dinosaur enemy)               
+        {
             weaponsList.Add(new Weapon("tazer", 10));
             weaponsList.Add(new Weapon("chainsaw", 20));
             weaponsList.Add(new Weapon("dino-shredder", enemy.healthDinosaur));
 
-            }
-        
+        }        
 
     }
-}
-
-
-    }
-
 }

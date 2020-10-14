@@ -41,18 +41,18 @@ namespace RobotsVsDinosaursProject
             return energyLevel;
         }
 
-        public List<string> attackList = new List<string>();    // Attack List for Dinosaurs
+        public Weapon[] attackArray = new Weapon[3];    // Attack Array for Dinosaurs
 
          public Dinosaur()
          {
-            attackList.Add("claw");
-            attackList.Add("bite");
-            attackList.Add("tail");
+            attackArray[0] = new Weapon("claw", 10);
+            attackArray[1] = new Weapon("bite", 20);
+            attackArray[2] = new Weapon("tail", 15);
          }
 
-        public void Attacking(Robot enemy)                      // Attacks will be all 3 types per round, includes Energy loss.
+        public void Attacking(Robot enemy)                      // Attacks will be from 3 types, includes Energy loss.
         {
-            int damageTotal = attackList.Count * attackDamage;
+            int damageTotal = 
             enemy.healthRobot -= damageTotal;
             RemoveEnergy();
 

@@ -8,13 +8,13 @@ namespace RobotsVsDinosaursProject
 {
     class Fleet
     {
-        public List<Robot> RobotFleet = new List<Robot>();
+        public List<Robot> robotFleet = new List<Robot>();
 
         public Fleet()
         {
-            RobotFleet.Add(new Robot("Robo-Bob", 30, 30));
-            RobotFleet.Add(new Robot("C3poo", 40, 30));
-            RobotFleet.Add(new Robot("Jim Bo", 50, 30));
+            robotFleet.Add(new Robot("Robo-Bob", 30, 30));
+            robotFleet.Add(new Robot("C3poo", 40, 30));
+            robotFleet.Add(new Robot("Jim Bo", 50, 30));
 
         }
 
